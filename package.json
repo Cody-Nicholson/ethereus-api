@@ -1,0 +1,32 @@
+{
+  "name": "etherious-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e ts --watch ./api --watch models --exec 'ts-node' index.ts",
+    "clayproc": "nodemon -e ts --watch ./process --exec 'ts-node' ./process/claymore.ts",
+    "eproc": "ts-node ./process/energy.ts",
+    "energyproc": "ts-node ./process/energy.ts",
+    "scan": "ts-node ./process/scanDevices.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.0.1",
+    "nodemon": "^1.15.0",
+    "tplink-smarthome-api": "^0.22.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.11.0",
+    "@types/lodash": "^4.14.96",
+    "@types/mongoose": "^4.7.33",
+    "@types/node": "^9.3.0"
+  }
+}
