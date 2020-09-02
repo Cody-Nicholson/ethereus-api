@@ -7,11 +7,13 @@ import { ClaymoreRoutes } from "./api/claymore-routes";
 import './models/connect';
 import { discoverDevice } from "./api/device";
 import { RigRoutes } from "./api/rig-routes";
+import * as cors from 'cors';
 
 let app = express();
 
 let port = 3005;
 
+app.use(cors());
 app.use(json());
 app.use(urlencoded({ extended: false }));
 
